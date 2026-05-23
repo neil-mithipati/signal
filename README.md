@@ -112,24 +112,28 @@ The frontend runs on `http://localhost:3000`, the backend on `http://localhost:8
 
 ## Architecture
 
-```
-User query
-    │
-    ▼
-FastAPI /review (SSE stream)
-    │
-    ├── Wirecutter agent (Sonnet + Firecrawl)
-    ├── CNET agent       (Sonnet + Firecrawl)
-    ├── Amazon agent     (Python rules + Firecrawl)
-    └── Reddit agent     (Sonnet + Reddit JSON API)
-    │
-    ▼
-Orchestrator (Opus) — synthesizes verdicts
-    │
-    ▼
-Final verdict streamed to UI + persisted to SQLite
-    │
-    └── Eval judges (Haiku) — faithfulness / correctness / relevance [async, non-blocking]
+```mermaid
+flowchart TD
+    Q([User Query])
+
+    subgraph agents[Source Agents — run in parallel]
+        W[Wirecutter]
+        C[CNET]
+        A[Amazon]
+        R[Reddit]
+    end
+
+    Q --> W & C & A & R
+    W & C & A & R --> O[Orchestrator]
+
+    O --> B[Buy → Open Amazon]
+    O --> Co[Consider → Save to Wishlist]
+    O --> S[Skip → New Search]
+
+    style agents fill:#f8f8f8,stroke:#ccc,color:#000
+    style B fill:#d4edda,stroke:#28a745,color:#000
+    style Co fill:#fff3cd,stroke:#ffc107,color:#000
+    style S fill:#f8d7da,stroke:#dc3545,color:#000
 ```
 
 Results are cached for 72 hours keyed on `(product, source)`. Completed reviews are persisted with a short shareable URL (`/review/{8hex}/{slug}`).
