@@ -59,6 +59,14 @@ The intuition: Wirecutter and CNET represent structured expert review with known
 
 I considered weighting Reddit higher because it surfaces long-term reliability signals that expert reviews miss (firmware issues, build quality degradation over time). I kept it lowest because Reddit community coverage is inconsistent — some products have rich threads, others have almost nothing. The orchestrator prompt flags notable disagreements between sources rather than burying them in a consensus, which surfaces those cases where Reddit's long-term signal contradicts the initial expert verdict.
 
+### Cutting RTINGS as a source
+
+RTINGS was in the original design. For display and audio hardware especially, their measurement-based methodology is the most rigorous available — they test TVs, headphones, and monitors against objective lab benchmarks rather than subjective impressions. They would have been the strongest signal in the stack.
+
+I cut them because the data wasn't accessible. Their site blocks scraping effectively, and they have no public API. Every approach I tried — Firecrawl, direct HTTP — returned either a wall or incomplete fragments that couldn't be reliably parsed into a structured verdict. Investing further in reverse-engineering their anti-scraping would have been fragile: any site update could silently break the agent with no warning.
+
+The lesson: source quality and source accessibility are independent variables, and you need both. RTINGS is high quality and low accessibility. Reddit is medium quality and high accessibility (public JSON API, no auth). The final four sources are the intersection of credible and reliably reachable — which is itself a product decision worth being explicit about.
+
 ---
 
 ## What I Learned
