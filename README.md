@@ -1,6 +1,6 @@
 # review-me
 
-**Should I buy this?** — A multi-agent product research tool that cuts through review noise by synthesizing only the four most credible sources — Wirecutter, CNET, Amazon, and Reddit — into a single Buy / Consider / Skip verdict.
+**Should I buy this?** — Signal is a multi-agent product research tool that finds the signal in all the noise, synthesizing only the four most credible sources — Wirecutter, CNET, Amazon, and Reddit — into a single Buy / Consider / Skip verdict.
 
 ---
 
@@ -10,7 +10,7 @@ Product reviews are drowning in noise. SEO-optimized "best of" lists that haven'
 
 The signal exists — Wirecutter does rigorous hands-on testing, CNET applies a structured scoring rubric, Amazon surfaces aggregate owner experience at scale, Reddit captures what power users discover after months of real use. But those four sources are scattered, speak different languages (semantic tiers vs. decimal scores vs. star ratings vs. raw sentiment), and no one has time to triangulate all of them for every purchase.
 
-The people who feel this most are buyers making mid-to-high consideration purchases — electronics, appliances, gear — who want a defensible answer without spending 45 minutes in browser tabs. They don't need more reviews. They need less noise.
+That's what Signal is for. Buyers making mid-to-high consideration purchases — electronics, appliances, gear — shouldn't need 45 minutes of browser tabs to get a defensible answer. They don't need more reviews. They need less noise.
 
 ---
 
