@@ -1,16 +1,16 @@
 # review-me
 
-**Should I buy this?** — A multi-agent product research tool that synthesizes Wirecutter, CNET, Amazon, and Reddit into a single Buy / Consider / Skip verdict.
+**Should I buy this?** — A multi-agent product research tool that cuts through review noise by synthesizing only the four most credible sources — Wirecutter, CNET, Amazon, and Reddit — into a single Buy / Consider / Skip verdict.
 
 ---
 
 ## The Problem
 
-Buying something you care about takes 45 minutes of browser tabs. Wirecutter says one thing. The Amazon reviews are a mix of astroturfing and genuine 3-star complaints. Reddit has the honest takes but they're buried in a 400-comment thread from two years ago. CNET has a score but no one knows what a 7.4 out of 10 actually means in practice.
+Product reviews are drowning in noise. SEO-optimized "best of" lists that haven't been updated since 2021. Amazon review sections flooded with incentivized five-stars and unverifiable complaints. YouTube unboxings that never mention long-term reliability. Sponsored content dressed up as editorial.
 
-This is a solved problem for people who know how to research — they've developed heuristics for which sources to trust for which categories, how to weight recency, and when expert opinion diverges from crowd experience. Everyone else either overpays, under-researches, or both.
+The signal exists — Wirecutter does rigorous hands-on testing, CNET applies a structured scoring rubric, Amazon surfaces aggregate owner experience at scale, Reddit captures what power users discover after months of real use. But those four sources are scattered, speak different languages (semantic tiers vs. decimal scores vs. star ratings vs. raw sentiment), and no one has time to triangulate all of them for every purchase.
 
-The people who feel this most are busy professionals making mid-to-high-consideration purchases (electronics, appliances, gear) who want a defensible answer fast — not a data dump.
+The people who feel this most are buyers making mid-to-high consideration purchases — electronics, appliances, gear — who want a defensible answer without spending 45 minutes in browser tabs. They don't need more reviews. They need less noise.
 
 ---
 
