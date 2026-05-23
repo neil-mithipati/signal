@@ -130,10 +130,10 @@ flowchart TD
     O --> Co[Consider → Save to Wishlist]
     O --> S[Skip → New Search]
 
-    style agents fill:#f8f8f8,stroke:#ccc,color:#000
-    style B fill:#d4edda,stroke:#28a745,color:#000
-    style Co fill:#fff3cd,stroke:#ffc107,color:#000
-    style S fill:#f8d7da,stroke:#dc3545,color:#000
+    style agents fill:#f5f5f5,stroke:#ddd,color:#000
+    style B fill:#dcf0dd,stroke:#9ecba1,color:#000
+    style Co fill:#fdf4d3,stroke:#e8cb7a,color:#000
+    style S fill:#fde8e9,stroke:#f0a8aa,color:#000
 ```
 
 Results are cached for 72 hours keyed on `(product, source)`. Completed reviews are persisted with a short shareable URL (`/review/{8hex}/{slug}`).
