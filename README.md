@@ -4,17 +4,17 @@ Signal is a multi-agent product research tool that finds the signal in all the n
 
 ---
 
-## The Problem
+## Problem
 
 Product reviews are full of noise — paid placements, outdated roundups, incentivized five-stars. The credible signal exists across Wirecutter, CNET, Amazon, and Reddit, but no one has time to cross-reference four sources for every purchase. Signal does it in seconds.
 
 ---
 
-## The Solution
+## Solution
 
 Enter a product name. Four agents run in parallel, each extracting a structured verdict from its source. An orchestrator synthesizes them into a single Buy / Consider / Skip recommendation that streams to the UI in real-time and gets a shareable link.
 
-**Stack:** FastAPI + Next.js 15 + Claude (Opus/Sonnet/Haiku) + Firecrawl + SQLite
+**Stack:** FastAPI + Next.js 15 + Claude (Opus/Sonnet/Haiku) + Firecrawl + SQLite + Vercel
 
 ![Review page streaming results in real-time](docs/screenshot-review.png)
 *↑ Add a screenshot of the review page here*
@@ -63,7 +63,7 @@ Results are cached for 72 hours keyed on `(product, source)`. Completed reviews 
 
 ---
 
-## What I Learned
+## Learnings
 
 - **Scraping is difficult:** Most review sites actively block bots, and that's only getting more aggressive with AI crawlers. RTINGS, my preferred review website, does not expose an API and has a powerful defense against scrapers, Anthropic's native web fetch or third-party scrapers like the one used in this project, Firecrawl
 
