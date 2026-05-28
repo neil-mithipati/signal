@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "review-me",
+  title: "signal",
   description: "Should I buy it?",
 };
 

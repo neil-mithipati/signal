@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 # ── Prompt templates ──────────────────────────────────────────────────────────
 # Kept in sync with ~/.claude/agents/{judge}.md
 
-FAITHFULNESS_PROMPT = """You are a faithfulness evaluator for the review-me product review app.
+FAITHFULNESS_PROMPT = """You are a faithfulness evaluator for the signal product review app.
 
 Determine whether the source agent's verdict and extracted data are faithful to (grounded in) the source_data — nothing fabricated or contradicting the raw facts.
 
@@ -39,7 +39,7 @@ Source grounding rules:
 
 Respond with ONLY a JSON object: {"label": "faithful"|"unfaithful", "score": 1.0|0.0, "explanation": "..."}"""
 
-CORRECTNESS_PROMPT = """You are a correctness evaluator for the review-me product review app.
+CORRECTNESS_PROMPT = """You are a correctness evaluator for the signal product review app.
 
 Determine whether the source agent correctly applied source-specific mapping rules to derive its verdict.
 
@@ -54,7 +54,7 @@ INCORRECT: verdict clearly deviates from the mapping (e.g., CNET 9.2 → Conside
 
 Respond with ONLY a JSON object: {"label": "correct"|"incorrect", "score": 1.0|0.0, "explanation": "..."}"""
 
-RELEVANCE_PROMPT = """You are a document relevance evaluator for the review-me product review app.
+RELEVANCE_PROMPT = """You are a document relevance evaluator for the signal product review app.
 
 Determine whether the data retrieved from a review source is actually about the product the user searched for.
 

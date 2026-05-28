@@ -2,7 +2,7 @@ import json
 from urllib.parse import quote_plus
 import anthropic
 
-SYSTEM_PROMPT = """You are the final verdict synthesizer for a product review app called review-me.
+SYSTEM_PROMPT = """You are the final verdict synthesizer for a product review app called signal.
 You receive structured results from four sources: Wirecutter, CNET, Amazon, and Reddit.
 
 Source weighting (highest to lowest):

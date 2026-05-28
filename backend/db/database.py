@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # DATABASE_PATH env var lets Railway (or any host) point to a persistent volume
-DB_PATH = Path(os.environ.get("DATABASE_PATH", str(Path(__file__).parent.parent / "review_me.db")))
+DB_PATH = Path(os.environ.get("DATABASE_PATH", str(Path(__file__).parent.parent / "signal.db")))
 CACHE_TTL_HOURS = 72
 
 

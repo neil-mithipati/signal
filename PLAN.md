@@ -1,7 +1,7 @@
-# review-me — Planning Conversation
+# signal — Planning Conversation
 
 ## Overview
-Planning session for **review-me**, an agentic product review app that aggregates and synthesizes research from verified sources (Wirecutter, CNET, Amazon, Reddit) to answer: *"Should I buy this?"*
+Planning session for **signal**, an agentic product review app that aggregates and synthesizes research from verified sources (Wirecutter, CNET, Amazon, Reddit) to answer: *"Should I buy this?"*
 
 ---
 

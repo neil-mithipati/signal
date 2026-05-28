@@ -1,4 +1,4 @@
-# review-me — Planning Conversation (Raw)
+# signal — Planning Conversation (Raw)
 
 ---
 
@@ -6,7 +6,7 @@
 
 **Claude:** Good, clean slate. Here's a structured plan across all four dimensions:
 
-**Plan: review-me**
+**Plan: signal**
 
 **Dimension 1 — Recommendation Engine**
 

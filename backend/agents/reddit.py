@@ -41,7 +41,7 @@ async def run(product: str, firecrawl: FirecrawlApp, claude: anthropic.AsyncAnth
         async with httpx.AsyncClient() as client:
             resp = await client.get(
                 url,
-                headers={"User-Agent": "review-me/1.0"},
+                headers={"User-Agent": "signal/1.0"},
                 follow_redirects=True,
                 timeout=15.0,
             )
