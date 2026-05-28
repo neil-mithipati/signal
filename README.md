@@ -16,7 +16,10 @@ Enter a product name. Four agents run in parallel, each extracting a structured 
 
 **Stack:** FastAPI + Next.js 15 + Claude (Opus/Sonnet/Haiku) + Firecrawl + SQLite + Vercel
 
-<img src="frontend/public/signal-landing-page.png" width="48%" /> <img src="frontend/public/signal-review-page.png" width="48%" />
+<table border="0"><tr>
+<td valign="middle" width="48%"><img src="frontend/public/signal-landing-page.png" width="100%" /></td>
+<td valign="middle" width="48%"><img src="frontend/public/signal-review-page.png" width="100%" /></td>
+</tr></table>
 
 ---
 
