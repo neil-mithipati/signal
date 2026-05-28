@@ -16,8 +16,9 @@ Enter a product name. Four agents run in parallel, each extracting a structured 
 
 **Stack:** FastAPI + Next.js 15 + Claude (Opus/Sonnet/Haiku) + Firecrawl + SQLite + Vercel
 
-![Review page streaming results in real-time](docs/screenshot-review.png)
-*↑ Add a screenshot of the review page here*
+![landing page](frontend/public/signal-landing-page.png)
+
+![review page](frontend/public/signal-review-page.png)
 
 ---
 
